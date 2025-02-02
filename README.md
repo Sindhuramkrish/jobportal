@@ -37,23 +37,34 @@ Deployment: GitHub Pages (Frontend), Render/Vercel (Backend)
 ├── routes/       # API routes  
 └── README.md     # Project documentation
 
-🚀 Setup & Installation
+Thus job portal project uses JWT (JSON Web Token) for authentication. This is evident from the presence of the jsonwebtoken package in  dependencies list.
 
-1. Clone the repository:
+🔐 Authentication Mechanism:
 
-git clone https://github.com/yourusername/job-portal.git  
-cd job-portal
+1. User Login & Signup:
 
+Users provide credentials (email/password).
 
-2. Install dependencies:
-
-cd client && npm install  
-cd ../server && npm install
+Passwords are hashed using bcryptjs before storing in the database.
 
 
-3. Run the project:
 
-npm run dev
+2. Token Generation:
+
+Upon successful login, a JWT token is generated using jsonwebtoken.
+
+This token is sent to the client for future authenticated requests.
+
+
+
+3. Token Verification (Middleware):
+
+Incoming requests include the token in headers (e.g., Authorization: Bearer <token>).
+
+The backend verifies the token before granting access to protected routes.
+
+
+
 
 
 
