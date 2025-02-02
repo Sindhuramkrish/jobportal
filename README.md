@@ -1,9 +1,9 @@
-*MERN Stack Job Portal*
+MERN Stack Job Portal
 
 
 A responsive job portal built using the MERN stack, enabling job seekers to find and apply for jobs while employers can post and manage listings.
 
- *Features*
+ Features
 
 User Authentication (JWT-based)
 
