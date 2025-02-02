@@ -1,0 +1,46 @@
+{
+  "name": "job-portal",
+  "version": "1.0.0",
+  "description": "job portal project",
+  "homepage": "https://github.com/techinfo-youtube/MERN-STACK-JOB-PORTAL-APP#readme",
+  "bugs": {
+    "url": "https://github.com/techinfo-youtube/MERN-STACK-JOB-PORTAL-APP/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techinfo-youtube/MERN-STACK-JOB-PORTAL-APP.git"
+  },
+  "license": "ISC",
+  "author": "TEchinfoyt",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client ",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.1.2",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongodb": "^6.13.0",
+    "mongoose": "^7.8.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "swagger-doc": "^0.3.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
+    "validator": "^13.9.0",
+    "xss-clean": "^0.1.1"
+  }
+}
